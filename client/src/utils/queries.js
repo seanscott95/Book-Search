@@ -8,12 +8,13 @@ export const GET_ME = gql`
       email
       bookCount
       savedBooks {
-        authors
-        description
-        bookId
-        imagelink
-        title
-      }
+          bookId
+          authors
+          description
+          title
+          image
+          link
+        }
     }
   }
 `;
