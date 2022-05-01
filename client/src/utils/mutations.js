@@ -23,7 +23,7 @@ export const ADD_USER = gql`
         password
         bookCount
         savedBooks {
-          bookid
+          bookId
           authors
           description
           title
