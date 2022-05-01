@@ -7,16 +7,6 @@ export const LOGIN_USER = gql`
       user {
         _id
         username
-        email
-        bookCount
-        savedBooks {
-          bookId
-          authors
-          description
-          title
-          image
-          link
-        }
       }
     }
   }
@@ -30,9 +20,10 @@ export const ADD_USER = gql`
         _id
         username
         email
+        password
         bookCount
         savedBooks {
-          bookId
+          bookid
           authors
           description
           title
@@ -45,24 +36,19 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_BOOK = gql`
-  mutation saveBook($bookId: ID!, $authors: [String!], $description: String!,
+  mutation saveBook($bookId: ID!, $authors: String!, $description: String!,
    $title: String!, $image: String!, $link: String!) {
-    saveBook(bookId: $bookId, authors: $authors, description: $description, title: $title, 
-     image: $image, link: $link) {
-      token
-      user {
-        _id
-        username
-        email
-        bookCount
-        savedBooks {
-          bookId
-          authors
-          description
-          title
-          image
-          link
-        }
+    saveBook(bookid: $bookId, authors: $authors, description: $description, title: $title, image: $image, link: $link) {
+      _id
+      username
+      email
+      savedBooks {
+        bookId
+        authors
+        description
+        title
+        image
+        link
       }
     }
   }
@@ -71,20 +57,19 @@ export const SAVE_BOOK = gql`
 export const REMOVE_BOOK = gql`
   mutation removeBook($bookId: ID!) {
     removeBook(bookId: $bookId) {
-      token
-      user {
-        _id
-        username
-        email
-        bookCount
-        savedBooks {
-          bookId
-          authors
-          description
-          title
-          image
-          link
-        }
+      _id
+      username
+      email
+      password
+      bookCount
+      savedBooks {
+        bookid
+        authors
+        description
+        title
+        image
+        link
       }
     }
-  }`
+  }
+`;
