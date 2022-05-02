@@ -63,7 +63,7 @@ export const REMOVE_BOOK = gql`
       password
       bookCount
       savedBooks {
-        bookid
+        bookId
         authors
         description
         title
