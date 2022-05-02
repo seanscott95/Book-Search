@@ -18,11 +18,11 @@
 
 - [mongoose](https://www.npmjs.com/package/mongoose)
 
-- [Concurrently](https://www.npmjs.com/package/concurrently)
+- [concurrently](https://www.npmjs.com/package/concurrently)
 
 - [apollo-client](https://www.npmjs.com/package/@apollo/client)
 
-- [Bootstrap](https://www.npmjs.com/package/bootstrap)
+- [bootstrap](https://www.npmjs.com/package/bootstrap)
 
     
 ## Table of Contents 
