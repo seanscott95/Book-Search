@@ -4,7 +4,7 @@
 <p> This application was created to enjoy the convenience of searching and saving your favourite books. The application was created with GraphQL API built with Apollo Server.
 </p>
 
-<p>This application was created with [Node.js](https://nodejs.org/en/). The modules used include:</p>
+This application was created with [Node.js](https://nodejs.org/en/). The modules used include:
 
 - [apollo-server-express](https://www.npmjs.com/package/apollo-server-express)
 
